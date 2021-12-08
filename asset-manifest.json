@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/test/static/css/main.58fe92f6.chunk.css",
-    "main.js": "/test/static/js/main.fde973ba.chunk.js",
-    "main.js.map": "/test/static/js/main.fde973ba.chunk.js.map",
+    "main.js": "/test/static/js/main.d3f813f0.chunk.js",
+    "main.js.map": "/test/static/js/main.d3f813f0.chunk.js.map",
     "runtime-main.js": "/test/static/js/runtime-main.cdaf22ae.js",
     "runtime-main.js.map": "/test/static/js/runtime-main.cdaf22ae.js.map",
-    "static/js/2.17b78a82.chunk.js": "/test/static/js/2.17b78a82.chunk.js",
-    "static/js/2.17b78a82.chunk.js.map": "/test/static/js/2.17b78a82.chunk.js.map",
+    "static/js/2.51c101bc.chunk.js": "/test/static/js/2.51c101bc.chunk.js",
+    "static/js/2.51c101bc.chunk.js.map": "/test/static/js/2.51c101bc.chunk.js.map",
     "index.html": "/test/index.html",
     "static/css/main.58fe92f6.chunk.css.map": "/test/static/css/main.58fe92f6.chunk.css.map",
-    "static/js/2.17b78a82.chunk.js.LICENSE.txt": "/test/static/js/2.17b78a82.chunk.js.LICENSE.txt",
+    "static/js/2.51c101bc.chunk.js.LICENSE.txt": "/test/static/js/2.51c101bc.chunk.js.LICENSE.txt",
     "static/media/20210806_102244_222_radiohistory_ep0544.c5856041.mp3": "/test/static/media/20210806_102244_222_radiohistory_ep0544.c5856041.mp3",
     "static/media/radireki_thumbnail.264ebb1a.jpeg": "/test/static/media/radireki_thumbnail.264ebb1a.jpeg"
   },
   "entrypoints": [
     "static/js/runtime-main.cdaf22ae.js",
-    "static/js/2.17b78a82.chunk.js",
+    "static/js/2.51c101bc.chunk.js",
     "static/css/main.58fe92f6.chunk.css",
-    "static/js/main.fde973ba.chunk.js"
+    "static/js/main.d3f813f0.chunk.js"
   ]
 }
