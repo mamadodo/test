@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./App.css";
 
 // import sound from "./MusMus-JGL-017.mp3";
@@ -16,8 +16,18 @@ const track = {
 export const App = () => {
   const musicRef = useRef(new Audio(episode));
   const intervalRef = useRef(null);
-  console.log(musicRef);
-  console.log(musicRef.current.duration);
+  // console.log(musicRef);
+  // console.log(musicRef.current.duration);
+  // console.log(isNaN(musicRef.current.duration));
+  const [mDuration, setMDuration] = useState();
+
+  useEffect(() => {
+    const dTimer = setTimeout(() => {
+      setMDuration(musicRef.current.duration)
+      console.log(mDuration);
+    }, 500);
+    return () => clearTimeout(dTimer);
+  }, [mDuration])
   
   const timeBar = useRef(null);
   let timeBarWidth;
@@ -52,7 +62,7 @@ export const App = () => {
   }
 
   const musicCurrentTime = musicRef.current.currentTime;
-  const musicRate = (Math.floor(musicCurrentTime / musicRef.current.duration * 100));
+  const musicRate = (Math.floor(musicCurrentTime / mDuration * 100));
   console.log(musicRate);
   // play button
   const onClickTogglePlay = () => {
@@ -87,7 +97,7 @@ export const App = () => {
     timeBarX = e.nativeEvent.offsetX;
     console.log(e.target.getBoundingClientRect().width);
     console.log(e.nativeEvent.offsetX);
-    musicRef.current.currentTime = (timeBarX / timeBarWidth * musicRef.current.duration);
+    musicRef.current.currentTime = (timeBarX / timeBarWidth * mDuration);
   }
 
   // speed change
